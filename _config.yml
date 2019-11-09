@@ -1,5 +1,5 @@
-title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
+title: Kiros-Blog-Theme
+description: "A fork of hacker-blog for Kiro47's website"
 author:
   name: "SomeHacker"
   email: "someone@somewebsite.somedomain"
@@ -10,7 +10,7 @@ baseurl: /
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 3
+paginate: 10
 paginate_path: /page/:num/
 
 defaults:
@@ -29,4 +29,4 @@ plugins:
 
 # Custom variables
 owner : "SomeHacker"
-year : "2018"
+year : "2019"
