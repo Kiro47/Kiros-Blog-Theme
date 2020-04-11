@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="{{ "/css/social.css" | prepend: site.baseurl | replace: '//', '/' }}">
+<div class="social-icon-container">
+{% if site.data.social.email %}
+  <div class="social-icon">
+    <a href="mailto:{{ site.data.social.email }}">
+      <img src="{{ BASE_PATH  }}/assets/images/120px-TK_email_icon.svg.png" >
+    </a>
+  </div>
+{% endif %}
+{% if site.data.social.keybase %}
+  <div class="social-icon">
+    <a href="https://keybase.io/{{ site.data.social.keybase }}">
+      <img src="{{ BASE_PATH  }}/assets/images/keybase-logo-48.png" >
+    </a>
+  </div>
+{% endif %}
+{% if site.data.social.twitter %}
+   <div class="social-icon">
+    <a href="https://twitter.com/{{ site.data.social.twitter }}">
+      <img src="{{ BASE_PATH  }}/assets/images/Twitter_Logo_WhiteOnImage.png" >
+    </a>
+  </div>
+{% endif %}
+{% if site.data.social.gitlab %}
+   <div class="social-icon">
+    <a href="https://gitlab.com/{{ site.data.social.gitlab }}">
+      <img src="{{ BASE_PATH  }}/assets/images/gitlab-icon-rgb.png" >
+    </a>
+  </div>
+{% endif %}
+{% if site.data.social.github %}
+   <div class="social-icon">
+    <a href="https://github.com/{{ site.data.social.github }}">
+      <img src="{{ BASE_PATH  }}/assets/images/GitHub-Mark-Light-64px.png" >
+    </a>
+  </div>
+{% endif %}
+{% if site.data.social.lhc %}
+   <div class="social-icon">
+    <a href="{{ site.data.social.lhc }}">
+      <img src="{{ BASE_PATH  }}/assets/images/lhc-logo-256.gif" >
+    </a>
+  </div>
+{% endif %}
+</div>

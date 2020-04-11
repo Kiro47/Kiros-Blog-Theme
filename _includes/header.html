@@ -1,11 +1,17 @@
 <header>
-  <div>
-    <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
-    {% assign owner_first_name = site.owner | split: " " %}
-    <h1>{{ owner_first_name[0] | downcase }}@home:~$</h1>
-    </a>
-    <div class="header-links">
+    <link rel="stylesheet" href="{{ "/css/header.css" | prepend: site.baseurl | replace: '//', '/' }}">
+    <div class="header-filler flex-item"></div>
+    <div class="header-main flex-item">
+      <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+      {% assign owner_first_name = site.owner | split: " " %}
+      <h1>{{ owner_first_name[0] | downcase }}@home:~$</h1>
+      </a>
+    </div>
+    <div class="header-social flex-item">
+      {% include social.html %}
+    </div>
+    <div class="header-links flex-item">
       {% include links.html %}
     </div>
-  </div>
+    <div class="header-filler flex-item"></div>
 </header>

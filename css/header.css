@@ -1,0 +1,24 @@
+---
+#
+---
+
+header {
+    display: flex;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.header-filler {
+}
+
+.header-social {
+}
+
+.header-main {
+}
+
+.header-links {
+    width: 15%;
+}
